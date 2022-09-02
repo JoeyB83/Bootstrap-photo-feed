@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Instagram Photo Feed</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar bg-light">
+                        <div class="d-flex flex-row mb-2">
+                            <div class="p-1">
+                                <img src="instagram.png" alt="" width="20" height="20">
+                            </div>
+                            <div class="p-1">
+                                <h6>Instagram</h6>
+                            </div>                       
+                        </div>
+                        <div class="d-flex flex-row-reverse">
+                            <div class="p-1">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                      <img class="gear" src="gear.png" width="20" height="20">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item last" href="#">Log out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    Create a new post
+                                </button>
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">                                
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Create a new post</h4>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal">X</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label for="comment">Caption:</label>
+                                            <input class="form-control form-control-sm" type="text" placeholder="Add the caption of your post here" aria-label=".form-control-sm example">
+                                            <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                                                <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                                <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                                              </svg></button> 
+                                              <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                              </svg></button>                                                                                     
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>  
+                                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Publish</button>                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="container grid">
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+                      </svg></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="detalle.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                      </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h6>My Crazy dog Spark!</h6>
+                    <span>08/26</span>                    
+                </div>
+                <div class="card-img">
+                    <img class="img-fluid post" src="https://picsum.photos/id/169/2500/1662">
+                </div>
+                <div class="card-footer">
+                    <span><strong>204 likes</strong></span>
+                    <p>This is an example of a very good photo that you can post on instagram</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h6>Concert night</h6>
+                    <span>09/15</span>                    
+                </div>
+                <div class="card-img">
+                    <img class="img-fluid post" src="https://picsum.photos/id/117/1544/1024">
+                </div>
+                <div class="card-footer">
+                    <span><strong>350 likes</strong></span>
+                    <p>Extraordinary concert last night</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h6>Coding</h6>
+                    <span>08/26</span>                    
+                </div>
+                <div class="card-img">
+                    <img class="img-fluid post" src="https://picsum.photos/id/180/2400/1600">
+                </div>
+                <div class="card-footer">
+                    <span><strong>204 likes</strong></span>
+                    <p>Practicing my codes for tonight class</p>
+                </div>
+            </div>                                        
+        </div>
+    </body>
+
+</html>

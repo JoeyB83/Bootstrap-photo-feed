@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 60%;
+    background-color: white;   
+}
+.container-fluid{
+    background-color: white;
+}
+.body{
+    margin-top: 5px;
+}
+.grid{
+    margin-top: 5px;
+    width: 100%;
+}
+.card-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+.card-footer{
+    background-color: white;
+    height: 60px;     
+}
+.card{
+    margin-top:20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+span{    
+    font-size:smaller;
+}
+p{
+    font-size:smaller;    
+}
+.posts{
+    margin-top: 5px;
+}
+.last{
+    color:red;
+}
+.btn-close{
+    border: none;
+    background-color: white;
+}
+.form-control-sm{
+    height: 70px;   
+}
+.btn-light{
+    margin-top: 5px;
+}
